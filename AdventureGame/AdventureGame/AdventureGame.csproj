@@ -54,6 +54,7 @@
     <Compile Include="InputHandler.cs" />
     <Compile Include="Interaction.cs" />
     <Compile Include="Journey.cs" />
+    <Compile Include="PlayerData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
