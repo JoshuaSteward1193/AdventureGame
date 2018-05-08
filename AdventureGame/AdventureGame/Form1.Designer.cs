@@ -33,6 +33,7 @@
             this.numChoices = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnInventory = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numChoices)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,11 +98,21 @@
             this.btnSubmit.UseVisualStyleBackColor = true;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
+            // btnInventory
+            // 
+            this.btnInventory.Location = new System.Drawing.Point(503, 56);
+            this.btnInventory.Name = "btnInventory";
+            this.btnInventory.Size = new System.Drawing.Size(126, 23);
+            this.btnInventory.TabIndex = 5;
+            this.btnInventory.Text = "Inventory";
+            this.btnInventory.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(696, 401);
+            this.ClientSize = new System.Drawing.Size(636, 401);
+            this.Controls.Add(this.btnInventory);
             this.Controls.Add(this.btnSubmit);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.numChoices);
@@ -123,6 +134,7 @@
         private System.Windows.Forms.NumericUpDown numChoices;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Button btnInventory;
     }
 }
 
