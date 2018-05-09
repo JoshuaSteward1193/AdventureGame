@@ -20,11 +20,10 @@ namespace AdventureGame
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            NameRequestForm nameRequestForm = new NameRequestForm();
+            nameRequestForm.ShowDialog();
             ProgramData.LoadData();
-            PlayerData.Name = "Nemo";
-            PlayerData.MaxHealth = 10;
-            PlayerData.Health = 10;
+            PlayerData.LoadData();
             TurnNumber = 1;
             RefreshDisplay();
         }

@@ -8,7 +8,18 @@ namespace AdventureGame
 {
     class PlayerData
     {
-        public static string Name { get; set; }
+        static string name;
+        public static string Name
+        {
+            get
+            {
+                return name;
+            }
+            set
+            {
+                name = value;
+            }
+        } 
         private static int health;
         public static int Health {
             get
@@ -25,5 +36,11 @@ namespace AdventureGame
             }
         }
         public static int MaxHealth { get; set; }
+
+        public static void LoadData()
+        {
+            MaxHealth = 10;
+            Health = 10;
+        }
     }
 }

@@ -53,7 +53,19 @@
     </Compile>
     <Compile Include="InputHandler.cs" />
     <Compile Include="Interaction.cs" />
+    <Compile Include="InventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InventoryForm.Designer.cs">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Journey.cs" />
+    <Compile Include="NameRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NameRequestForm.Designer.cs">
+      <DependentUpon>NameRequestForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PlayerData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramData.cs" />
@@ -61,6 +73,12 @@
     <Compile Include="Room.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InventoryForm.resx">
+      <DependentUpon>InventoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NameRequestForm.resx">
+      <DependentUpon>NameRequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
