@@ -9,6 +9,9 @@ namespace AdventureGame
 {
     class Interaction
     {
+        private static int IDTracker { get; set; } = 1;
+
+        public int ID { get; set; }
         int EffectNum { get; set; }
         private int amount;
         public int Amount
@@ -22,7 +25,7 @@ namespace AdventureGame
                 amount = value;
                 if(amount <= 0)
                 {
-                    ProgramData.CurrentLocation.RemoveInteraction(Description);
+                    ProgramData.CurrentLocation.RemoveInteraction(ID);
                 }
             }
         }
@@ -35,6 +38,8 @@ namespace AdventureGame
             Amount = amt;
             Description = desc;
             Command = comm;
+            ID = IDTracker;
+            IDTracker++;
         }
         public void enact()
         {

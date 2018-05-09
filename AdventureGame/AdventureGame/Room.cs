@@ -73,9 +73,9 @@ namespace AdventureGame
         {
             actions.Add(x);
         }
-        public void RemoveInteraction(string desc)
+        public void RemoveInteraction(int id)
         {
-            actions.Remove(actions.SingleOrDefault(x => x.Description == desc));
+            actions.Remove(actions.SingleOrDefault(x => x.ID == id));
         }
         public void DoInteraction(int value)
         {

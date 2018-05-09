@@ -59,6 +59,7 @@
     <Compile Include="InventoryForm.Designer.cs">
       <DependentUpon>InventoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item.cs" />
     <Compile Include="Journey.cs" />
     <Compile Include="NameRequestForm.cs">
       <SubType>Form</SubType>

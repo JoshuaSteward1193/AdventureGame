@@ -145,6 +145,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(505, 165);
+            this.ControlBox = false;
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnSlot5);
             this.Controls.Add(this.lblSlot5);
@@ -157,7 +158,7 @@
             this.Controls.Add(this.btnSlot1);
             this.Controls.Add(this.lblSlot1);
             this.Name = "InventoryForm";
-            this.Text = "InventoryForm";
+            this.Text = "Inventory";
             this.ResumeLayout(false);
             this.PerformLayout();
 
