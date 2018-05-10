@@ -11,6 +11,7 @@ namespace AdventureGame
         public static Room CurrentLocation { get; set; }
 
         public static List<Room> Rooms = new List<Room>();
+        public static List<Item> Items = new List<Item>();
 
         public static void LoadData()
         {
@@ -30,6 +31,12 @@ namespace AdventureGame
 
             //CREATE INTERACTIONS
             Rooms[0].AddInteraction(new Interaction(1, "There is a strange doll here.", "Pickup the strange doll"));
+            Rooms[2].AddInteraction(new Interaction(2, "There is a large chest in one corner of the room. It is mostly full of junk, " +
+                "but you might find something useful inside of it.", "Look inside the chest", 1 ,"You don't think you'll find anything else in " +
+                "the chest."));
+
+            //CREATE ITEMS
+            Items.Add(new Item("Red Potion", "Red Potions", "A sparkling red liquid inside a crystal class flask.", 1));
 
             //LOAD VARIABLES
             CurrentLocation = Rooms[0];

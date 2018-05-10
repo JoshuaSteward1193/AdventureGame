@@ -31,13 +31,15 @@ namespace AdventureGame
         }
         public string Description { get; set; }
         public string Command { get; set; }
+        public string DepletionText { get; set; }
 
-        public Interaction(int effect, string desc, string comm, int amt = 1)
+        public Interaction(int effect, string desc, string comm, int amt = 1, string deplete = "")
         {
             EffectNum = effect;
             Amount = amt;
             Description = desc;
             Command = comm;
+            DepletionText = deplete;
             ID = IDTracker;
             IDTracker++;
         }
@@ -57,14 +59,19 @@ namespace AdventureGame
                     break;
                 case 2:
                     int i = rand.Next(0, 10);
-                    if(i < 8)
+                    if(i < 7)
                     {
                         MessageBox.Show("You search but find nothing.");
                     } else
                     {
-                        MessageBox.Show("Surprise! Nothing is here yet!");
+                        ProgramData.Items[0].Pickup();
+                        Amount--;
                     }
                     break;
+            }
+            if(Amount == 0 && DepletionText != "")
+            {
+                MessageBox.Show(DepletionText);
             }
         }
 
