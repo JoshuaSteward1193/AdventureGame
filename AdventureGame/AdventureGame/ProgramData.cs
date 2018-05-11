@@ -16,23 +16,31 @@ namespace AdventureGame
         public static void LoadData()
         {
             //CREATE ROOMS
-            Rooms.Add(new Room("Bedroom", "This is a simple bedroom with a bed, dresser, and a wardrobe."));            
-            Rooms.Add(new Room("Hallway", "You are standing in the hallway outside the bedroom. There is not much here."));
-            Rooms.Add(new Room("Library", "A well-stocked personal library with hundreds of volumes to choose from. A window " +
-                "lets in the bright sunlight."));
-            
-            //CREATE JOURNEYS
-            Rooms[0].AddExit(new Journey(Rooms[1], "Leave the bedroom", "You open the bedroom door and exit the room, " +
-                "shutting the door behind you."));
-            Rooms[1].AddExit(new Journey(Rooms[0], "Enter the bedroom", "You open the bedroom door and enter the room, " +
-                "closing the door behind you."));
-            Rooms[1].AddExit(new Journey(Rooms[2], "Enter the library", "You walk down the hallway, your feet padding softly on " +
-                "the thick carpet. You open the heavy door to the library, and cross the threshold."));
+            Rooms.Add(new Room("Prison Cell", "You are in a small prison cell with four crumbling stone walls. The walls are covered with " +
+                "slimy moss, and the floor is strewn with filthy straw. There seems to be no guards near your cell at all."));            
+            Rooms.Add(new Room("Ancient Corridor", "You are standing in an ancient stone corridor. Guttering torches cast a dim light " +
+                "over the walkway. At the far end of the corridor is another wooden door."));
+            Rooms.Add(new Room("Ancient Corridor", "You are standing in an ancient stone corridor. Guttering torches cast a dim light " +
+                "over the walkway. At the far end of the corridor is another wooden door. You notice a small door to your left, about halfway " +
+                "down the corridor."));
+            Rooms.Add(new Room("Forgotten Armory", "You are standing in an old armory full of ancient weapons."));
+            Rooms.Add(new Room("Ancient Corridor", "You are standing in an ancient stone corridor. Guttering torches cast a dim light " +
+                "over the walkway. There is a large wooden door before you, the exit of this corridor."));
+
+            //CREATE JOURNEYS            
+            Rooms[1].AddExit(new Journey(Rooms[2], "Head towards the wooden door", "You softly creep down the corridor towards the exit."));
+            Rooms[2].AddExit(new Journey(Rooms[3], "Open the small door", "The small door is not locked, and you are able to push it open. The " +
+                "rusty hinges shriek as they open. You step inside a small, dark room."));
+            Rooms[2].AddExit(new Journey(Rooms[4], "Head towards the wooden door", "You softly creep down the corridor towards the exit."));
+            Rooms[4].AddExit(new Journey(Rooms[2], "Go back to the small side door", "You softly creep back to the small side door."));
+            Rooms[3].AddExit(new Journey(Rooms[2], "Leave the ancient armory", "You step through the small doorway, back into the lighter " +
+                "dimness of the corridor."));
 
             //CREATE INTERACTIONS
-            Rooms[0].AddInteraction(new Interaction(1, "There is a strange doll here.", "Pickup the strange doll"));
-            Rooms[2].AddInteraction(new Interaction(2, "There is a large chest in one corner of the room. It is mostly full of junk, " +
-                "but you might find something useful inside of it.", "Look inside the chest", 1 ,"You don't think you'll find anything else in " +
+            Rooms[0].AddInteraction(new Interaction(1, "The door to the cell is made of old rotten wood. It looks like it is ready to fall apart.",
+                "Try to break the door down.", 3, "The door suddenly gives out, and falls to the floor in a heap of rotten wood."));
+            Rooms[3].AddInteraction(new Interaction(2, "There is a large chest in one corner of the room. It is mostly full of junk, " +
+                "but you might find something useful inside of it.", "Look inside the chest", 2 ,"You don't think you'll find anything else in " +
                 "the chest."));
 
             //CREATE ITEMS

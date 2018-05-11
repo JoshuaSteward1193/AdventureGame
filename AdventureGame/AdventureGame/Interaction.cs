@@ -53,9 +53,13 @@ namespace AdventureGame
             switch (x)
             {
                 case 1:
-                    MessageBox.Show("You pick up the strange doll. It is small, and smells of smoke. Its black glass " +
-                        "eyes stare soullessly back at you.");
+                    MessageBox.Show("You throw yourself hard against the door. The rotten boards buckle under your weight.");
                     Amount--;
+                    if(amount == 0)
+                    {
+                        ProgramData.Rooms[0].AddExit(new Journey(ProgramData.Rooms[1], "Leave your cell", "You dash through the open doorway, " +
+                            "over the remains of the wooden door."));
+                    }
                     break;
                 case 2:
                     int i = rand.Next(0, 10);

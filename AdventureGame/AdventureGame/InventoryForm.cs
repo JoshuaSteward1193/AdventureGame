@@ -16,5 +16,16 @@ namespace AdventureGame
         {
             InitializeComponent();
         }
+
+        private void InventoryForm_Load(object sender, EventArgs e)
+        {
+            foreach(Item x in ProgramData.Items)
+            {
+                if(x.NumInPlayerInv > 0)
+                {
+
+                }
+            }
+        }
     }
 }

@@ -53,6 +53,7 @@
     </Compile>
     <Compile Include="InputHandler.cs" />
     <Compile Include="Interaction.cs" />
+    <Compile Include="Inventory.cs" />
     <Compile Include="InventoryForm.cs">
       <SubType>Form</SubType>
     </Compile>

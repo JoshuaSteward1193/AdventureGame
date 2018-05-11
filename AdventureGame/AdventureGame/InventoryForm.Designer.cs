@@ -159,6 +159,7 @@
             this.Controls.Add(this.lblSlot1);
             this.Name = "InventoryForm";
             this.Text = "Inventory";
+            this.Load += new System.EventHandler(this.InventoryForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

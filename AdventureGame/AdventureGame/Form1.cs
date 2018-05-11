@@ -22,10 +22,12 @@ namespace AdventureGame
         {
             NameRequestForm nameRequestForm = new NameRequestForm();
             nameRequestForm.ShowDialog();
+            MessageBox.Show($"Welcome to your adventure, {PlayerData.Name}.");
             ProgramData.LoadData();
             PlayerData.LoadData();
             TurnNumber = 1;
             RefreshDisplay();
+            MessageBox.Show("You awaken inside a dark and murky prison cell, with no memory how you got there.");
         }
         private void RefreshDisplay() { 
             RefreshStatusBar();
