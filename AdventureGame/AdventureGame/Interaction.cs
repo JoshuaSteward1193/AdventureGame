@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AdventureGame
@@ -68,7 +64,7 @@ namespace AdventureGame
                         MessageBox.Show("You search but find nothing.");
                     } else
                     {
-                        ProgramData.Items[0].Pickup();
+                        Inventory.Add(ProgramData.Items[0]);
                         Amount--;
                     }
                     break;

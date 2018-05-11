@@ -58,6 +58,7 @@
             this.btnSlot1.TabIndex = 1;
             this.btnSlot1.Text = "Use";
             this.btnSlot1.UseVisualStyleBackColor = true;
+            this.btnSlot1.Click += new System.EventHandler(this.btnSlot1_Click);
             // 
             // btnSlot2
             // 
@@ -67,6 +68,7 @@
             this.btnSlot2.TabIndex = 3;
             this.btnSlot2.Text = "Use";
             this.btnSlot2.UseVisualStyleBackColor = true;
+            this.btnSlot2.Click += new System.EventHandler(this.btnSlot2_Click);
             // 
             // lblSlot2
             // 
@@ -85,6 +87,7 @@
             this.btnSlot3.TabIndex = 5;
             this.btnSlot3.Text = "Use";
             this.btnSlot3.UseVisualStyleBackColor = true;
+            this.btnSlot3.Click += new System.EventHandler(this.btnSlot3_Click);
             // 
             // lblSlot3
             // 
@@ -103,6 +106,7 @@
             this.btnSlot4.TabIndex = 7;
             this.btnSlot4.Text = "Use";
             this.btnSlot4.UseVisualStyleBackColor = true;
+            this.btnSlot4.Click += new System.EventHandler(this.btnSlot4_Click);
             // 
             // lblSlot4
             // 
@@ -121,6 +125,7 @@
             this.btnSlot5.TabIndex = 9;
             this.btnSlot5.Text = "Use";
             this.btnSlot5.UseVisualStyleBackColor = true;
+            this.btnSlot5.Click += new System.EventHandler(this.btnSlot5_Click);
             // 
             // lblSlot5
             // 
@@ -139,6 +144,7 @@
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // InventoryForm
             // 

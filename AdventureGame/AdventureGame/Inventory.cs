@@ -5,26 +5,23 @@ namespace AdventureGame
 {
     class Inventory
     {
-        List<Item> items = new List<Item>();
+        public static List<Item> items = new List<Item>();
 
-        private int MaxSize { get; set; }
-
-        public Inventory(int max = 0)
-        {
-            MaxSize = max;
-        }
-        public void Add(Item item)
+        private static int MaxSize { get; set; } = 5;
+        
+        public static void Add(Item item)
         {
             if(items.Count < MaxSize)
             {
                 items.Add(item);
+                MessageBox.Show($"You found a {item.Name}.");
             }
             else
             {
                 MessageBox.Show("This Inventory is full");
             }
         }
-        public Item LookAt(int i)
+        public static Item LookAt(int i)
         {
             if(i >= 0 && i < items.Count)
             {
@@ -34,6 +31,11 @@ namespace AdventureGame
             {
                 return null;
             }
+        }
+        public static void Use(int i)
+        {
+            items[i].Use();
+            items.RemoveAt(i);
         }
         
     }

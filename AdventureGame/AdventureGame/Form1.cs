@@ -46,5 +46,10 @@ namespace AdventureGame
             RefreshDisplay();
         }
 
+        private void btnInventory_Click(object sender, EventArgs e)
+        {
+            InventoryForm inventoryForm = new InventoryForm();
+            inventoryForm.ShowDialog();
+        }
     }
 }

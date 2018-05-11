@@ -106,6 +106,7 @@
             this.btnInventory.TabIndex = 5;
             this.btnInventory.Text = "Inventory";
             this.btnInventory.UseVisualStyleBackColor = true;
+            this.btnInventory.Click += new System.EventHandler(this.btnInventory_Click);
             // 
             // Form1
             // 
