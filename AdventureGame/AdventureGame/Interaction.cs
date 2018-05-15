@@ -71,6 +71,9 @@ namespace AdventureGame
                 case 3:
                     MessageBox.Show("You grab the old longsword and lift it off its hanging hooks. It is covered with dust and " +
                         "cobwebs, but it still seems to be moderately sharp.");
+                    break;
+                default:
+                    break;
 
             }
             if(Amount == 0 && DepletionText != "")
