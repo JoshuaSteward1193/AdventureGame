@@ -12,6 +12,7 @@ namespace AdventureGame
 
         public static List<Room> Rooms = new List<Room>();
         public static List<Item> Items = new List<Item>();
+        public static List<Weapon> Weapons = new List<Weapon>();
 
         public static void LoadData()
         {
@@ -46,6 +47,13 @@ namespace AdventureGame
 
             //CREATE ITEMS
             Items.Add(new Item("Red Potion", "Red Potions", "A sparkling red liquid inside a crystal class flask.", 1));
+
+            //CREATE EQUIPMENT
+            //CREATE WEAPONS
+            Weapons.Add(new Weapon("Rusty Longsword", "An old sword that has clearly seen better days.", "longsword",
+                10, 2));
+            Weapons.Add(new Weapon("Pheasant Sword", "A find sword that once belonged to a common knight.", "longsword",
+                14, 3));
 
             //LOAD VARIABLES
             CurrentLocation = Rooms[0];

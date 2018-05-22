@@ -6,6 +6,9 @@ namespace AdventureGame
 {
     public partial class InventoryForm : Form
     {
+
+        ToolTip itemDescription = new ToolTip();
+
         public InventoryForm()
         {
             InitializeComponent();
@@ -13,14 +16,16 @@ namespace AdventureGame
 
         private void InventoryForm_Load(object sender, EventArgs e)
         {
-            ToolTip itemDescription = new ToolTip();
-
             itemDescription.AutoPopDelay = 5000;
             itemDescription.InitialDelay = 500;
             itemDescription.ReshowDelay = 400;
 
             itemDescription.ShowAlways = true;
 
+            LoadInventory();
+        }
+        private void LoadInventory()
+        {
             foreach (Label lbl in this.Controls.OfType<Label>())
             {
                 lbl.Text = "";
@@ -71,27 +76,32 @@ namespace AdventureGame
 
         private void btnSlot1_Click(object sender, EventArgs e)
         {
-            Inventory.items[0].Use();
+            Inventory.Use(0);
+            LoadInventory();
         }
 
         private void btnSlot2_Click(object sender, EventArgs e)
         {
-            Inventory.items[1].Use();
+            Inventory.Use(1);
+            LoadInventory();
         }
 
         private void btnSlot3_Click(object sender, EventArgs e)
         {
-            Inventory.items[2].Use();
+            Inventory.Use(2);
+            LoadInventory();
         }
 
         private void btnSlot4_Click(object sender, EventArgs e)
         {
-            Inventory.items[3].Use();
+            Inventory.Use(3);
+            LoadInventory();
         }
 
         private void btnSlot5_Click(object sender, EventArgs e)
         {
-            Inventory.items[4].Use();
+            Inventory.Use(4);
+            LoadInventory();
         }
 
         
