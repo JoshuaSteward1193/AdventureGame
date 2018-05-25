@@ -18,6 +18,6 @@ namespace AdventureGame
             Type = t;
             AttackValue = a;
             BlockValue = b;
-        }
+        }        
     }
 }

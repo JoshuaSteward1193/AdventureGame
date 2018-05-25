@@ -117,6 +117,7 @@
             this.btnEquipment.TabIndex = 6;
             this.btnEquipment.Text = "Equipment";
             this.btnEquipment.UseVisualStyleBackColor = true;
+            this.btnEquipment.Click += new System.EventHandler(this.btnEquipment_Click);
             // 
             // Form1
             // 

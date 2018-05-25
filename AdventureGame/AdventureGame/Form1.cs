@@ -36,7 +36,7 @@ namespace AdventureGame
         }
         private void RefreshStatusBar()
         {
-            lblStatusBar.Text = $"{PlayerData.Name} | Health: {PlayerData.Health}/{PlayerData.MaxHealth} | Turn: {TurnNumber}";
+            lblStatusBar.Text = $"{PlayerData.Name} | Health: {PlayerData.Health}/{PlayerData.MaxHealth} | {PlayerData.PrimaryWeapon.Name} | Turn: {TurnNumber}";
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -50,6 +50,12 @@ namespace AdventureGame
         {
             InventoryForm inventoryForm = new InventoryForm();
             inventoryForm.ShowDialog();
+        }
+
+        private void btnEquipment_Click(object sender, EventArgs e)
+        {
+            EquipmentForm equipmentForm = new EquipmentForm();
+            equipmentForm.ShowDialog();
         }
     }
 }

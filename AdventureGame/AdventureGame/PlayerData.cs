@@ -36,11 +36,21 @@ namespace AdventureGame
             }
         }
         public static int MaxHealth { get; set; }
+        public static Equipment PrimaryWeapon { get; set; }
+        public static Equipment SecondaryWeapon { get; set; }
+
+        public static List<Equipment> EquipmentList = new List<Equipment>();
 
         public static void LoadData()
         {
             MaxHealth = 10;
             Health = 10;
+            EquipmentList.Add(ProgramData.Weapons[0]);
+            PrimaryWeapon = EquipmentList[0];
+        }
+        public static void PickupEquipment(Equipment e)
+        {
+            EquipmentList.Add(e);
         }
     }
 }

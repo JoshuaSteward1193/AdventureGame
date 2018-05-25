@@ -50,10 +50,11 @@ namespace AdventureGame
 
             //CREATE EQUIPMENT
             //CREATE WEAPONS
+            Weapons.Add(new Weapon("Fists", "Your bare hands, and nothing else.", "unarmed", 1, 1));
             Weapons.Add(new Weapon("Rusty Longsword", "An old sword that has clearly seen better days.", "longsword",
-                10, 2));
+                10, 4));
             Weapons.Add(new Weapon("Pheasant Sword", "A find sword that once belonged to a common knight.", "longsword",
-                14, 3));
+                14, 5));
 
             //LOAD VARIABLES
             CurrentLocation = Rooms[0];
