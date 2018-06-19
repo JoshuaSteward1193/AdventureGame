@@ -73,6 +73,11 @@ namespace AdventureGame
                         "cobwebs, but it still seems to be moderately sharp.");
                     PlayerData.PickupEquipment(ProgramData.Weapons[1]);
                     break;
+                case 4:
+                    MessageBox.Show("You approach the Goblin.");
+                    CombatForm combatForm = new CombatForm();
+                    combatForm.ShowDialog();
+                    break;
                 default:
                     break;
 

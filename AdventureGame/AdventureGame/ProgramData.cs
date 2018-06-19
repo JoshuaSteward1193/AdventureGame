@@ -14,6 +14,8 @@ namespace AdventureGame
         public static List<Item> Items = new List<Item>();
         public static List<Weapon> Weapons = new List<Weapon>();
 
+        public static Creature enemyCombatant;
+
         public static void LoadData()
         {
             //CREATE ROOMS
@@ -27,6 +29,7 @@ namespace AdventureGame
             Rooms.Add(new Room("Forgotten Armory", "You are standing in an old armory full of ancient weapons."));
             Rooms.Add(new Room("Ancient Corridor", "You are standing in an ancient stone corridor. Guttering torches cast a dim light " +
                 "over the walkway. There is a large wooden door before you, the exit of this corridor."));
+            Rooms.Add(new Room("Old Courtyard", "You are standing in an old, abandoned courtyard."));
 
             //CREATE JOURNEYS            
             Rooms[1].AddExit(new Journey(Rooms[2], "Head towards the wooden door", "You softly creep down the corridor towards the exit."));
@@ -34,6 +37,7 @@ namespace AdventureGame
                 "rusty hinges shriek as they open. You step inside a small, dark room."));
             Rooms[2].AddExit(new Journey(Rooms[4], "Head towards the wooden door", "You softly creep down the corridor towards the exit."));
             Rooms[4].AddExit(new Journey(Rooms[2], "Go back to the small side door", "You softly creep back to the small side door."));
+            Rooms[4].AddExit(new Journey(Rooms[5], "Go through the wooden door", "You press against the wooden door, and it slowly swings open."));
             Rooms[3].AddExit(new Journey(Rooms[2], "Leave the ancient armory", "You step through the small doorway, back into the lighter " +
                 "dimness of the corridor."));
 
