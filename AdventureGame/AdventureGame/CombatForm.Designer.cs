@@ -36,6 +36,9 @@
             this.btnAction3A = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.lblStaminaB = new System.Windows.Forms.Label();
+            this.lblHealthB = new System.Windows.Forms.Label();
+            this.lblNameB = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // lblNameA
@@ -112,12 +115,42 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // lblStaminaB
+            // 
+            this.lblStaminaB.AutoSize = true;
+            this.lblStaminaB.Location = new System.Drawing.Point(319, 35);
+            this.lblStaminaB.Name = "lblStaminaB";
+            this.lblStaminaB.Size = new System.Drawing.Size(35, 13);
+            this.lblStaminaB.TabIndex = 10;
+            this.lblStaminaB.Text = "label1";
+            // 
+            // lblHealthB
+            // 
+            this.lblHealthB.AutoSize = true;
+            this.lblHealthB.Location = new System.Drawing.Point(319, 22);
+            this.lblHealthB.Name = "lblHealthB";
+            this.lblHealthB.Size = new System.Drawing.Size(35, 13);
+            this.lblHealthB.TabIndex = 9;
+            this.lblHealthB.Text = "label1";
+            // 
+            // lblNameB
+            // 
+            this.lblNameB.AutoSize = true;
+            this.lblNameB.Location = new System.Drawing.Point(319, 9);
+            this.lblNameB.Name = "lblNameB";
+            this.lblNameB.Size = new System.Drawing.Size(35, 13);
+            this.lblNameB.TabIndex = 8;
+            this.lblNameB.Text = "label1";
+            // 
             // CombatForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.lblStaminaB);
+            this.Controls.Add(this.lblHealthB);
+            this.Controls.Add(this.lblNameB);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAction3A);
@@ -146,5 +179,8 @@
         private System.Windows.Forms.Button btnAction3A;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label lblStaminaB;
+        private System.Windows.Forms.Label lblHealthB;
+        private System.Windows.Forms.Label lblNameB;
     }
 }

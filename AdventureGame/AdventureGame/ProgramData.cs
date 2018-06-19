@@ -48,6 +48,7 @@ namespace AdventureGame
                 "but you might find something useful inside of it.", "Look inside the chest", 2 ,"You don't think you'll find anything else in " +
                 "the chest."));
             Rooms[3].AddInteraction(new Interaction(3, "There is an old longsword hanging on the wall.", "Take the old longsword"));
+            Rooms[5].AddInteraction(new Interaction(4, "There is a single goblin standing guard in the courtyard.", "Approach the goblin"));
 
             //CREATE ITEMS
             Items.Add(new Item("Red Potion", "Red Potions", "A sparkling red liquid inside a crystal class flask.", 1));

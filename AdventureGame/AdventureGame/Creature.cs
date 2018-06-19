@@ -8,6 +8,7 @@ namespace AdventureGame
 {
     abstract class Creature
     {
+        public string Type { get; set; }
         public string Name { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
@@ -23,6 +24,20 @@ namespace AdventureGame
             {
                 maxHealth = value;
                 Health = maxHealth;
+            }
+        }
+        public int Stamina { get; set; }
+        private int maxStamina;
+        public int MaxStamina
+        {
+            get
+            {
+                return maxStamina;
+            }
+            set
+            {
+                maxStamina = value;
+                Stamina = maxStamina;
             }
         }
         public int Strength { get; set; }

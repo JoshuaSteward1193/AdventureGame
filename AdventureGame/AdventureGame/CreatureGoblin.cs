@@ -10,12 +10,14 @@ namespace AdventureGame
     {
         public CreatureGoblin(String name, int level, string t = "")
         {
+            Type = "Goblin";
             MaxHealth = 5 * level;
+            MaxStamina = 4 * level;
             Strength = 2 * level;
             Speed = 3 * level;
             Toughness = 3 * level;
             Level = level;
-            Description = "A small green goblin.";
+            Description = "A small green creature, it is strong and quick for its size.";
             Name = name;
             Title = t;
         }

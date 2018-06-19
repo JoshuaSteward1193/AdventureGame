@@ -75,6 +75,7 @@ namespace AdventureGame
                     break;
                 case 4:
                     MessageBox.Show("You approach the Goblin.");
+                    ProgramData.enemyCombatant = new CreatureGoblin("Bugo", 1);
                     CombatForm combatForm = new CombatForm();
                     combatForm.ShowDialog();
                     break;
