@@ -13,6 +13,7 @@ namespace AdventureGame
         public static List<Room> Rooms = new List<Room>();
         public static List<Item> Items = new List<Item>();
         public static List<Weapon> Weapons = new List<Weapon>();
+        public static List<Skill> Skills = new List<Skill>();
 
         public static Creature enemyCombatant;
 
@@ -50,8 +51,20 @@ namespace AdventureGame
             Rooms[3].AddInteraction(new Interaction(3, "There is an old longsword hanging on the wall.", "Take the old longsword"));
             Rooms[5].AddInteraction(new Interaction(4, "There is a single goblin standing guard in the courtyard.", "Approach the goblin"));
 
+            //CREATE SKILLS
+            Skills.Add(new Skill("Weak Punch", "You aim a weak punch at the enemy", " aims a weak punch at you.", "unarmed", 1, 0.9));
+            Skills.Add(new Skill("Solid Punch", "You make a solid strike at the enemy", " waits a moment, and then lunges forward and lashes out with " +
+                "a solid punch.", "unarmed", 1, 0.8, 1.3));
+            Skills.Add(new Skill("Sacrificial Strike", "You gather your final reserves of energy, and lunge at the enemy", " gathers its strength " +
+                "and strikes at you with all of its might.", "unarmed", 1, 0.5, 2.0));
+            Skills.Add(new Skill("Slice", "You swing at the enemy with your weapon", " swings at you with its sword.", "longsword", 1, 0.87));
+            Skills.Add(new Skill("Hack", "You raise your weapon high and hack at the enemy", " raises its sword high and brings it down towards you",
+                "longsword", 1, 0.80, 1.15));
+            Skills.Add(new Skill("Overwhelm", "You roar in the face of your foe, and charge towards them as you pound at them with blow after blow.",
+                " roars in defiance, and charges at you swinging its sword wildly.", "longsword", 1, 0.99, 3));
+
             //CREATE ITEMS
-            Items.Add(new Item("Red Potion", "Red Potions", "A sparkling red liquid inside a crystal class flask.", 1));
+            Items.Add(new Item("Red Potion", "Red Potions", "A sparkling red liquid inside a clear crystal flask.", 1));
 
             //CREATE EQUIPMENT
             //CREATE WEAPONS

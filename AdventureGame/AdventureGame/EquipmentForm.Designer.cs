@@ -70,6 +70,7 @@
             this.Controls.Add(this.lstPrimary);
             this.Controls.Add(this.lblPrimary);
             this.Name = "EquipmentForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "EquipmentForm";
             this.Load += new System.EventHandler(this.EquipmentForm_Load);
             this.ResumeLayout(false);

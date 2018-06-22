@@ -82,6 +82,7 @@
     <Compile Include="CombatForm.Designer.cs">
       <DependentUpon>CombatForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CombatManager.cs" />
     <Compile Include="Creature.cs" />
     <Compile Include="CreatureGoblin.cs" />
     <Compile Include="Equipment.cs" />
@@ -119,6 +120,7 @@
     <Compile Include="ProgramData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Room.cs" />
+    <Compile Include="Skill.cs" />
     <Compile Include="Weapon.cs" />
     <EmbeddedResource Include="CombatForm.resx">
       <DependentUpon>CombatForm.cs</DependentUpon>

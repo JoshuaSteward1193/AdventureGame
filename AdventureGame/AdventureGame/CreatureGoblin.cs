@@ -11,6 +11,7 @@ namespace AdventureGame
         public CreatureGoblin(String name, int level, string t = "")
         {
             Type = "Goblin";
+            WeaponType = "unarmed";
             MaxHealth = 5 * level;
             MaxStamina = 4 * level;
             Strength = 2 * level;

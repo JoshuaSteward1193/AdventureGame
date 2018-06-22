@@ -9,7 +9,7 @@ namespace AdventureGame
     class Weapon : Equipment
     {
         public int AttackValue { get; set; }
-        public int BlockValue { get; set; }
+        public int Stability { get; set; }
 
         public Weapon(string n, string d, string t, int a, int b)
         {
@@ -17,7 +17,7 @@ namespace AdventureGame
             Description = d;
             Type = t;
             AttackValue = a;
-            BlockValue = b;
+            Stability = b;
         }        
     }
 }

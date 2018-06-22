@@ -164,6 +164,7 @@
             this.Controls.Add(this.btnSlot1);
             this.Controls.Add(this.lblSlot1);
             this.Name = "InventoryForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Inventory";
             this.Load += new System.EventHandler(this.InventoryForm_Load);
             this.ResumeLayout(false);
