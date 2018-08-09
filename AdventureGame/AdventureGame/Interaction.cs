@@ -71,6 +71,8 @@ namespace AdventureGame
                 case 3:
                     MessageBox.Show("You grab the old longsword and lift it off its hanging hooks. It is covered with dust and " +
                         "cobwebs, but it still seems to be moderately sharp.");
+                    MessageBox.Show("To change your current weapon, click on the 'Equipment' button and click on the weapon you wish to equip " +
+                        "in the list.");
                     PlayerData.PickupEquipment(ProgramData.Weapons[1]);
                     break;
                 case 4:
@@ -88,6 +90,7 @@ namespace AdventureGame
                 MessageBox.Show(DepletionText);
             }
         }
+        Form1.
 
     }
 }

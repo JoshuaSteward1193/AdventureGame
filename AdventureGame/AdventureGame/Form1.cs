@@ -50,12 +50,14 @@ namespace AdventureGame
         {
             InventoryForm inventoryForm = new InventoryForm();
             inventoryForm.ShowDialog();
+            RefreshDisplay();
         }
 
         private void btnEquipment_Click(object sender, EventArgs e)
         {
             EquipmentForm equipmentForm = new EquipmentForm();
             equipmentForm.ShowDialog();
+            RefreshDisplay();
         }
     }
 }
